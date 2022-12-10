@@ -1,0 +1,95 @@
+html,body {
+    height: 100%;
+}
+/* 整体和左右布局 */
+.main {
+    display: flex;
+    min-height: 100%;
+    height: auto;
+}
+.main>div {
+    display: flex;
+    min-height: 100%;
+    height: auto;
+}
+/* 左侧内容 */
+.main-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #188eee url("../images/bg.png");
+}
+/* 头像 */
+.avatar {
+    width: 85px;
+    height: 85px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 8px solid rgb(67, 162, 240);
+}
+.avatar:hover {
+    animation: change 1s 0.3s infinite ;
+}
+.avatar .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@keyframes change {
+    from{
+        box-shadow: 0 0 0 rgba(255,255,255,0.8);
+        border-color:  rgb(67, 162, 240);
+    }
+    to{
+        box-shadow: 0 0 20px rgba(255,255,255,0.8);
+        border-color : rgb(188, 220, 252);
+    }
+}
+/* id */
+.user-id {
+    margin: 15px 0;
+    font-size: 25px;
+}
+/* 状态 */
+.condition {
+    font-size: 14px;
+}
+/* 联系方式 */
+.contact {
+    margin: 15px 0;
+    font-size: 16px;
+}
+.contact li {
+    padding: 8px 0;
+}
+.contact span {
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 1px;
+    vertical-align: middle;
+}
+/* 个人信息 */
+.info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 375px;
+    margin: 15px auto;
+    padding: 10px 0;
+    border: 1px solid rgb(63, 60, 60);
+    border-radius: 5px;
+}
+.info li {
+    width: 165px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+/*右侧内容*/
+.main-right {
+    width: 50%;
+    background: #f8f8f8;
+}
